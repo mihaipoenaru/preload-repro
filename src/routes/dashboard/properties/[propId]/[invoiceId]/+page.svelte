@@ -20,21 +20,21 @@
 	The invoice! {invoice.billedDate.toISODate()}
 </Heading>
 
-<RForm remote={editInvoice}  class="max-w-md rounded border p-2">
+<form  class="max-w-md rounded border p-2">
 	<FieldSet>
 		<FieldGroup class="grid grid-cols-4 items-end gap-2">
 			<Field>
-				<RInput {...electricity.as('number')}></RInput>
+				<input {...electricity.as('number')}>
 			</Field>
 			<Field>
-				<RInput {...gas.as('number')}></RInput>
+				<input {...gas.as('number')}>
 			</Field>
 			<Field>
-				<RInput {...telco.as('number')}></RInput>
+				<input {...telco.as('number')}>
 			</Field>
 			<Field>
-				<RInput {...maintenance.as('number')}></RInput>
+				<input {...maintenance.as('number')}>
 			</Field>
 		</FieldGroup>
 	</FieldSet>
-</RForm>
+</form>

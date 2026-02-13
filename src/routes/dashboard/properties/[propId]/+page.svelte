@@ -13,18 +13,18 @@
 	const { name } = editProperty.fields;
 </script>
 
-<RForm remote={editProperty} class="mt-14 max-w-sm" reset={false}>
+<form class="mt-14 max-w-sm" reset={false}>
 	<FieldGroup>
 		<FieldSet>
 			<FieldLegend>det</FieldLegend>
 			<Field>
 				<FieldLabel for="name">name</FieldLabel>
-				<RInput {...name.as('text')} placeholder="new name" />
+				<input {...name.as('text')} placeholder="new name" />
 			</Field>
 		</FieldSet>
 	</FieldGroup>
 
-</RForm>
+</form>
 
 <Separator class="mt-14" />
 
